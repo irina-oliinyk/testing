@@ -1,12 +1,5 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-@import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
+@import url('./about.css');
+
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -23,3 +16,13 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+/* body{
+  background: linear-gradient(90deg, #1c1d20 49.68%, #596808 67.73%, rgba(198, 227, 39, 0.76) 100%);
+    transform: rotate(-180deg);
+    height: 500px;
+    width: 500px;
+    backdrop-filter: blur(4px);
+} */
+
+
