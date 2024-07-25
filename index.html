@@ -2,84 +2,73 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/testing/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
+    <!-- <link rel="stylesheet" href="[CDN CSS URL]">
+    <script src="[CDN JS URL]"></script> -->
     
     <script type="module" crossorigin src="/testing/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/testing/assets/index-10c40100.css">
+    <link rel="modulepreload" crossorigin href="/testing/assets/vendor-8f98089f.js">
+    <link rel="stylesheet" href="/testing/assets/vendor-8255b786.css">
+    <link rel="stylesheet" href="/testing/assets/index-5ea71ea4.css">
   </head>
   <body>
-    <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
-</header>
-
-
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/testing/assets/javascript-8dac5379.svg" alt="" />
-    </section>
-
-    <!-- Loads the specified .html file -->
-    <section class="vite-promo">
-  <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
-
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
-          >
-        </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
-          >
-        </li>
-      </ul>
+    
+   <main>
+    <section class="about-me">
+    <h2 class="visually-hidden">Заголовок</h2>
+    <div class="about-conteiner-text">
+      <p class="about-text">I work with people all over the world to create impressive and <span
+          class="about-span-fn">functional</span> <span class="about-span-wb">websites</span> that reflect each client's
+        unique
+        personality.</p>
     </div>
-
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img
-        class="pic"
-        src="/testing/assets/vite-logo-51249ca9.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
-      />
+    
+    <picture>
+        <source srcset="../img/abou-me-2x.jpg 2x, ../img/abou-me-1x.jpg 1x " media="(min-width: 1140px)">
+        <source srcset="../img/abou-me-tab-2x.jpg 2x, ../img/abou-me-tab-1x.jpg 1x"
+            media="(min-width: 768px )">
+        <source srcset="../img/abou-me-mob-2x.jpg 2x, ../img/abou-me-mob-1x.jpg 1x"
+            media="(min-width: 375px )">
+        <img src="../img/abou-me-1x.jpg" alt="mann mit computer" width="343" height="500" />
+    </picture>
+    <div class="accordion-container">
+        <div class="ac">
+            <h2 class="ac-header">
+                <button type="button" class="ac-trigger">Lorem ipsum dolor sit amet.</button>
+            </h2>
+            <div class="ac-panel">
+                <p class="ac-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+    
+        <div class="ac">
+            <h2 class="ac-header">
+                <button type="button" class="ac-trigger">Lorem ipsum dolor sit amet.</button>
+            </h2>
+            <div class="ac-panel">
+                <p class="ac-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+    
+        <div class="ac">
+            <h2 class="ac-header">
+                <button type="button" class="ac-trigger">Lorem ipsum dolor sit amet.</button>
+            </h2>
+            <div class="ac-panel">
+                <p class="ac-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
+
+
+
+
+   </main>
     
   </body>
 </html>
